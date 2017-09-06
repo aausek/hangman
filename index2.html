@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HANGMAN GAME</title>
+
+    <!--BOOTSTRAP & jQUERY CDN-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 align="center">HANGMAN GAME</h1>
+            <h2 align="center">Press any key to begin</h2>
+        </div>
+
+        
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+               <h3 class="panel-title">Word to Guess</h3>
+            </div>
+            <div class="panel-body">
+                <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+            </div>
+        </div>
+
+        <div class="panel panel-danger">
+              <div class="panel-body">
+                    Letters Guessed:<span id="letGuesses"></span>
+              </div>
+        </div>
+        
+        <div class="panel panel-danger">
+                <div class="panel-body">
+                      Guesses Left: <span id="numGuesses"></span>
+                </div>
+          </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-body">
+                      Win Counter: <span id="winCounter">0</span>
+            </div>
+        </div>
+        
+        <div class="panel panel-danger">
+                <div class="panel-body">
+                          Loss Counter: <span id="lossCounter"></span>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- Link to JS file -->
+    <script src="assets/javascript/logic.js"></script>
+    <style>
+        span, .panel-body{
+            color: white;
+        }
+    </style>
+
+</body>
+</html>
